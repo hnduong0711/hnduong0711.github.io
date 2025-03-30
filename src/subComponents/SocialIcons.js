@@ -39,7 +39,7 @@ const SocialIcons = (props) => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href={"https://github.com/codebucks27"}
+          href={"https://github.com/hnduong0711"}
         >
           <Github
             width={25}
@@ -48,7 +48,7 @@ const SocialIcons = (props) => {
           />
         </a>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         initial={{scale:0 }}
         animate={{ scale: [0, 1, 1.5, 1] }}
         transition={{ type: "spring", duration: 1, delay: 1.2 }}
@@ -64,7 +64,7 @@ const SocialIcons = (props) => {
             fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
           />
         </a>
-      </motion.div>
+      </motion.div> */}
       <motion.div
         initial={{scale:0 }}
         animate={{ scale: [0, 1, 1.5, 1] }}
@@ -73,7 +73,7 @@ const SocialIcons = (props) => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href={"https://facebook.com/codebucks27"}
+          href={"https://www.facebook.com/huynh.nhut.duong.199796/"}
         >
           <Facebook
             width={25}
@@ -82,7 +82,7 @@ const SocialIcons = (props) => {
           />
         </a>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         initial={{scale:0 }}
         animate={{ scale: [0, 1, 1.5, 1] }}
         transition={{ type: "spring", duration: 1, delay: 1.6 }}
@@ -98,7 +98,7 @@ const SocialIcons = (props) => {
             fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
           />
         </a>
-      </motion.div>
+      </motion.div> */}
 
       <Line
         color={props.theme}

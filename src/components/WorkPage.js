@@ -30,17 +30,17 @@ const Main = styled(motion.ul)`
 
   color: white;
 `;
-const Rotate = styled.span`
-  display: block;
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  width: 80px;
-  height: 80px;
-  z-index: 1;
-`;
+// const Rotate = styled.span`
+//   display: block;
+//   position: fixed;
+//   right: 1rem;
+//   bottom: 1rem;
+//   width: 80px;
+//   height: 80px;
+//   z-index: 1;
+// `;
 
-// Framer-motion Configuration
+// // Framer-motion Configuration
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -53,25 +53,101 @@ const container = {
   },
 };
 
+
 const WorkPage = () => {
   const ref = useRef(null);
-  const yinyang = useRef(null);
+  // const yinyang = useRef(null);
 
-  useEffect(() => {
-    let element = ref.current;
+  // useEffect(() => {
+  //   let element = ref.current;
 
-    const rotate = () => {
-      element.style.transform = `translateX(${-window.pageYOffset}px)`;
+  //   const rotate = () => {
+  //     element.style.transform = `translateX(${-window.pageYOffset}px)`;
 
-      return (yinyang.current.style.transform =
-        "rotate(" + -window.pageYOffset + "deg)");
-    };
+  //     return (yinyang.current.style.transform =
+  //       "rotate(" + -window.pageYOffset + "deg)");
+  //   };
 
-    window.addEventListener("scroll", rotate);
-    return () => {
-      window.removeEventListener("scroll", rotate);
-    };
-  }, []);
+  //   window.addEventListener("scroll", rotate);
+  //   return () => {
+  //     window.removeEventListener("scroll", rotate);
+  //   };
+  // }, []);
+
+  const StudentCard = styled.div`
+  width: 600px;
+  padding: 0 20px;
+  text-align: center;
+  margin: 0 auto; /* Căn giữa card */
+`;
+
+  const Header = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+`;
+
+  const Logo = styled.img`
+  width: 80px;
+  height: auto;
+  margin-right: 20px;
+`;
+
+  const Title = styled.h1`
+  font-size: 24px;
+  color: #007bff;
+  margin: 0;
+`;
+
+  const Content = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+  const Info = styled.div`
+  text-align: left;
+`;
+
+  const InfoTitle = styled.h2`
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+`;
+
+  const InfoText = styled.p`
+  font-size: 16px;
+  color: #fff;
+  margin: 5px 0;
+  line-height: 1.5;
+
+  strong {
+    color: #007bff;
+  }
+`;
+
+  const Footer = styled.div`
+  margin-top: 20px;
+  border-top: 2px solid #007bff;
+  padding-top: 10px;
+`;
+
+  const FooterText = styled.p`
+  font-size: 14px;
+  color: #777;
+  margin: 5px 0;
+
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+`;
 
   return (
     <ThemeProvider theme={DarkTheme}>
@@ -80,16 +156,50 @@ const WorkPage = () => {
         <SocialIcons theme="dark" />
         <PowerButton />
 
-        <Main ref={ref} variants={container} initial="hidden" animate="show">
-          {Work.map((d) => (
-            <Card key={d.id} data={d} />
-          ))}
-        </Main>
-        <Rotate ref={yinyang}>
-          <YinYang width={80} height={80} fill={DarkTheme.text} />
-        </Rotate>
 
-        <BigTitlte text="WORK" top="10%" right="20%" />
+
+        <Main ref={ref} variants={container} initial="hidden" animate="show">
+          <StudentCard>
+            <Header>
+              <Logo
+                src="https://ttnnth-tinhoc.sgu.edu.vn/wp-content/uploads/2018/11/SGU-LOGO.png"
+                alt="SGU Logo"
+              />
+              <Title>TRƯỜNG ĐẠI HỌC SÀI GÒN</Title>
+            </Header>
+            <Content>
+              <Info>
+                <InfoTitle>THÔNG TIN SINH VIÊN</InfoTitle>
+                <InfoText>
+                  <strong>Họ và tên:</strong> Nguyễn Văn A
+                </InfoText>
+                <InfoText>
+                  <strong>MSSV:</strong> 12345678
+                </InfoText>
+                <InfoText>
+                  <strong>Ngành học:</strong> Công nghệ Thông tin
+                </InfoText>
+                <InfoText>
+                  <strong>Năm học:</strong> Năm cuối (2024-2025)
+                </InfoText>
+                <InfoText>
+                  <strong>Email:</strong> nguyenvana@sgu.edu.vn
+                </InfoText>
+                <InfoText>
+                  <strong>Mô tả:</strong> Sinh viên năm cuối Trường Đại học Sài Gòn, đang thực hiện đồ án tốt nghiệp với chủ đề "Ứng dụng AI trong Giáo dục". Nhiệt huyết, sáng tạo và mong muốn đóng góp cho sự phát triển của cộng đồng.
+                </InfoText>
+              </Info>
+            </Content>
+            <Footer>
+              <FooterText>Địa chỉ: 273 An Dương Vương, Quận 5, TP. Hồ Chí Minh</FooterText>
+              <FooterText>
+                Website: <a href="https://sgu.edu.vn" target="_blank">sgu.edu.vn</a>
+              </FooterText>
+            </Footer>
+          </StudentCard>
+        </Main>
+
+        {/* <BigTitlte text="LOVE SGU" top="10%" right="20%" /> */}
       </Box>
     </ThemeProvider>
   );
