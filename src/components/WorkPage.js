@@ -7,10 +7,6 @@ import LogoComponent from "../subComponents/LogoComponent";
 import SocialIcons from "../subComponents/SocialIcons";
 import PowerButton from "../subComponents/PowerButton";
 
-import { Work } from "../data/WorkData";
-import Card from "../subComponents/Card";
-import { YinYang } from "./AllSvgs";
-import BigTitlte from "../subComponents/BigTitlte";
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
@@ -30,15 +26,6 @@ const Main = styled(motion.ul)`
 
   color: white;
 `;
-// const Rotate = styled.span`
-//   display: block;
-//   position: fixed;
-//   right: 1rem;
-//   bottom: 1rem;
-//   width: 80px;
-//   height: 80px;
-//   z-index: 1;
-// `;
 
 // // Framer-motion Configuration
 const container = {
@@ -56,23 +43,6 @@ const container = {
 
 const WorkPage = () => {
   const ref = useRef(null);
-  // const yinyang = useRef(null);
-
-  // useEffect(() => {
-  //   let element = ref.current;
-
-  //   const rotate = () => {
-  //     element.style.transform = `translateX(${-window.pageYOffset}px)`;
-
-  //     return (yinyang.current.style.transform =
-  //       "rotate(" + -window.pageYOffset + "deg)");
-  //   };
-
-  //   window.addEventListener("scroll", rotate);
-  //   return () => {
-  //     window.removeEventListener("scroll", rotate);
-  //   };
-  // }, []);
 
   const StudentCard = styled.div`
   width: 600px;
@@ -171,16 +141,16 @@ const WorkPage = () => {
               <Info>
                 <InfoTitle>THÔNG TIN SINH VIÊN</InfoTitle>
                 <InfoText>
-                  <strong>Họ và tên:</strong> Nguyễn Văn A
+                  <strong>Họ và tên:</strong> Huỳnh Nhựt Dương
                 </InfoText>
                 <InfoText>
-                  <strong>MSSV:</strong> 12345678
+                  <strong>MSSV:</strong> 3121410024
                 </InfoText>
                 <InfoText>
                   <strong>Ngành học:</strong> Công nghệ Thông tin
                 </InfoText>
                 <InfoText>
-                  <strong>Năm học:</strong> Năm cuối (2024-2025)
+                  <strong>Năm học:</strong> Năm cuối
                 </InfoText>
                 <InfoText>
                   <strong>Email:</strong> nguyenvana@sgu.edu.vn
