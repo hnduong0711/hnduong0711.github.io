@@ -1,38 +1,46 @@
 // blog data
-
+import TextLogo from "../assets/Images/TextLogo.jpeg"
 export const Blogs = [
     {
         id:1,
+        name:"Teamodoro: A Team Task Manager And Focus Time",
+        tags:["reactjs", "typescript", "zustand", "tailwindcss", "framer-motion", "firebase"],
+        date:"Aug, 2025",
+        imgSrc: TextLogo,
+        link:"https://github.com/hnduong0711/Cinestar.git",
+    },
+    {
+        id:2,
         name:"Cinestar: A Movie App using ReactJS and .NET",
-        tags:[],
-        date:"Dec 8, 2024",
+        tags:["reactjs", "tailwindcss", "dotnet", "docker"],
+        date:"Dec, 2024",
         imgSrc:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD3l-Cep0XUBlA93697zLstyqsaMZFCIq8hQ&s",
         link:"https://github.com/hnduong0711/Cinestar.git"
     },
     {
-        id:2,
+        id:3,
         name:"FUTA: A Bus Ticket Booking App using ReactJS and Spring Boot",
-        tags:[],
-        date:"Coming soon...",
+        tags:["reactjs", "typescript", "zustand", "tailwindcss", "spring-boot"],
+        date:"Mar ,2025",
         imgSrc:"https://storage.googleapis.com/futa-express-web-cms-prod/LOGO_FUTA_GROUP_2023_01_51a8be4af1/LOGO_FUTA_GROUP_2023_01_51a8be4af1.png",
         link:"https://github.com/hnduong0711/Futa.git"
     },
     {
-        id:3,
-        name:"Sporty: A Music App using ReactJS and Dijango",
-        tags:[],
-        date:"Coming soon...",
+        id:4,
+        name:"Spotify: A Music App using ReactJS and Dijango",
+        tags:["reactJS", "web-socket", "dijango", "docker"],
+        date:"Mar, 2025",
         imgSrc:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/1200px-Spotify_logo_with_text.svg.png",
         link:"https://github.com/hnduong0711/Spotify.git"
     },
-    // {
-    //     id:4,
-    //     name:"How to build a Fabulous Todo App using React, Redux and Framer-Motion",
-    //     tags:["react","redux","framer-motion"],
-    //     date:"26 May, 2021",
-    //     imgSrc:"https://res.cloudinary.com/practicaldev/image/fetch/s--r5oUDhhT--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/036s7j5b73up7455rdth.png",
-    //     link:"https://dev.to/codebucks/build-redux-react-todo-list-app-with-animations-using-framer-motion-1mp1"
-    // },
+    {
+        id:4,
+        name:"YouTube clone: A social media using HTML/CSS JS Ajax and laravel",
+        tags:["html", "css", "ajax", "javascript", "laravel"],
+        date:"Apr, 2024",
+        imgSrc:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/2560px-Logo_of_YouTube_%282015-2017%29.svg.png",
+        link:"https://github.com/hnduong0711/MyYoutube.git"
+    },
     // {
     //     id:5,
     //     name:"What is Higher Order Component (HOC) in React JS?",
