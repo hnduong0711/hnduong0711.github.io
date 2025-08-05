@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.58462fbc.css",
+    "main.js": "/static/js/main.54e5d01a.js",
+    "static/media/Duong.jpg": "/static/media/Duong.59f3fa98477c182dae9a.jpg",
+    "static/media/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg": "/static/media/patrick-tomasso-Oaqk7qqNh_c-unsplash.8ca90014fb6ce5980110.jpg",
+    "static/media/spaceman.png": "/static/media/spaceman.5ec7fcfa9a803ead726c.png",
+    "static/media/TextLogo.jpeg": "/static/media/TextLogo.e828b16958b43d18bee0.jpeg",
+    "index.html": "/index.html",
+    "main.58462fbc.css.map": "/static/css/main.58462fbc.css.map",
+    "main.54e5d01a.js.map": "/static/js/main.54e5d01a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58462fbc.css",
+    "static/js/main.54e5d01a.js"
+  ]
+}
